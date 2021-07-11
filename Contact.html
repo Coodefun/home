@@ -49,28 +49,36 @@ rel="stylesheet">
         <a href="#"><b>Youtube</b></a> |
     </footer>
 
-    <!-- <script>
+     <script>
         
     
         function sendMail()
         {
-            alert("hello");
-            alert(3+2+1);
-            alert("3+2+1");
-
-        let name=document.getElementById("UserName").value;
-        let email=document.getElementById("UserEmail").value;
-        let phone=document.getElementById("phone").value;
-        let childName=document.getElementById("ChildName").value;
-
-        let body= 'Name: ' + name + '<br>Email: '+ email + '<br>Phone Number: ' + phone + '<br>Child Name: ' + childName ;
-
-       
+            let name = document.getElementById("UserName").value;
+       // alert("name: "+ name);
+        let email = document.getElementById("UserEmail").value;
+        let phone = document.getElementById("phone").value;
+        let childName = document.getElementById("ChildName").value;
         
-            alert(body);
+    
+        let body= 'Name: ' + name + '<br>Email: '+ email + '<br>Phone Number: ' + phone + '<br>Child Name: ' + childName ;
+    
+    alert(body);
+    
+                Email.send({               
+                Host : "smtp.gmail.com",
+                Username : "coodefunteachers@gmail.com",
+                Password : "abc",
+                To : 'v2codefun@gmail.com',
+                From : "coodefunteachers@gmail.com",
+                Subject : "New Mail on contact form from: " + name,
+                Body : body 
+            }).then(
+                      message => alert(message)
+            );
 
         }
-    </script> -->
+    </script> 
 
    
 
