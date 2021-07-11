@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <h1>Coodefun</h1>
+        
+        <nav id="navLinks">  
+            <a class="fa"  onclick="hideMenu()">⌧</a>        
+            <a href="#">HOME</a> 
+            <a href="#coursesection">Course</a> 
+            <a href="Gallery.html">Gallery</a> 
+            <a href="Contact.html">Contact US</a>            
+        </nav>
+       
+        <a href="#" class="demo-btn">Book a Free Demo</a>
+        <a class="fa"  onclick="showMenu()">≡</a>  
+       
+    </header>
+
+    <main>
+
+        <section class="OnlineCoding">
+            <div class="OnlineCoding-Col">
+            <h2>
+                Online coding Class 
+            </h2>
+            <article>
+                <h4>Coding is the most important skill of the 21st century </h4>
+                <p>Parents across the world wants their kids to learn coding. 
+                    So don’t miss the bus, book your free class today and introduce your child to the world of coding.</p>
+            </article>
+            <article>
+                <h4>Coding is the future </h4>
+                <p>Interactive and one to one learning under the guidance of our skilled and 
+                    qualified trainers.
+                    </p>
+            </article>
+            </div>
+
+            <div class="OnlineCoding-Col">
+                <img src="../Day 15_T/images/Online Class.jpg">
+            </div>
+
+        </section>
+
+        <section class="WhyCoding">
+            <h1 class="section-heading">
+
+                <span class="white">WHY CODING IS</span><span class="yellow"> IMPORTANT FOR KIDS</span>
+            
+            </h1>
+            <div class="WhyCodingRow">
+
+            <div class="WhyCoding-Col">
+            <article>
+                <h4>Enhance Creativity</h4>
+                <figure>
+                    <img src="../Day 11_T/enhance creatvity.jpg" >
+                    <figcaption>Enhance Creativty</figcaption>
+
+                </figure>
+                <p>Coding expands the kid's imagination by giving them the tools to be creative thinkers.	
+                    It also enables them to create powerful animations & apps</p>
+            </article>
+        </div>
+            
+        <div class="WhyCoding-Col">
+            <article>
+                <h4>Bright Future</h4>
+                <figure>
+                    <img src="../Day 11_T/enhance creatvity.jpg" >
+                    <figcaption>Enhance Creativty</figcaption>
+
+                </figure>
+                <p>Coding not only opens the doors to the top colleges & jobs but also develop 
+                    entrepreneurial mindset.
+                </p>                    
+            </article>
+        </div>
+
+        <div class="WhyCoding-Col">
+            <article>
+                <h4>Academic Excellence </h4>
+                <figure>
+                    <img src="../Day 11_T/enhance creatvity.jpg" >
+                    <figcaption>Enhance Creativty</figcaption>
+
+                </figure>
+                <p>Through coding, children learn problem solving skills and develops higher concentration</p>
+                
+            </article>
+        </div>
+    </div>
+        </section>
+
+    </main>
+    <footer>
+        <h4>Coodefun ..</h4>
+        <a href="#"><b>Facebook</b></a> |
+        <a href="#"><b>Instagram</b></a> |
+        <a href="#"><b>Youtube</b></a> |
+    </footer>
+    
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+    </script>
+</body>
+</html>
