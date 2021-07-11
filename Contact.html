@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Coodefun</h1>
+        
+        <nav id="navLinks">  
+            <a class="fa"  onclick="hideMenu()">⌧</a>        
+            <a href="index.html">HOME</a> 
+            <a href="#coursesection">Course</a> 
+            <a href="Gallery.html">Gallery</a> 
+            <a href="Contact.html">Contact US</a>            
+        </nav>
+       
+        <a href="#" class="demo-btn">Book a Free Demo</a>
+        <a class="fa"  onclick="showMenu()">≡</a>  
+       
+    </header>
+    <main>
+        <div class="contactForm">
+            <form action="javascript:sendMail()" method="post">
+                <h2>Get in Touch</h2>
+                <input type="text" name="UserName" id="UserName" required placeholder="Name" />
+                <input type="email" name="UserEmail" id="UserEmail" required placeholder="Email Address"/>
+                <input type="tel" pattern="[1-9]{1}[0-9]{9}" name="phone" id="phone" required placeholder="Enter your 10 digit phone Number" />
+                <input type="text" name="ChildName" id="ChildName" required placeholder="Child Name" />
+                            
+                <br>           
+                <input type="submit" id="button" class="hero-btn" value="BOOK NOW"  />   
+            </form>
+            </div>
+    </main>
+
+    <footer>
+        <h4>Coodefun ..</h4>
+        <a href="#"><b>Facebook</b></a> |
+        <a href="#"><b>Instagram</b></a> |
+        <a href="#"><b>Youtube</b></a> |
+    </footer>
+
+    <!-- <script>
+        
+    
+        function sendMail()
+        {
+            alert("hello");
+            alert(3+2+1);
+            alert("3+2+1");
+
+        let name=document.getElementById("UserName").value;
+        let email=document.getElementById("UserEmail").value;
+        let phone=document.getElementById("phone").value;
+        let childName=document.getElementById("ChildName").value;
+
+        let body= 'Name: ' + name + '<br>Email: '+ email + '<br>Phone Number: ' + phone + '<br>Child Name: ' + childName ;
+
+       
+        
+            alert(body);
+
+        }
+    </script> -->
+
+   
+
+    
+</body>
+</html>
